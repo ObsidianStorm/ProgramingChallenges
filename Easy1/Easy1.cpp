@@ -19,7 +19,7 @@ int main()
 	cout << "Your name is " << Name << ", you are " << age << " years old, and your username is " << Username << ".";
 	
 	ofstream file;
-	file.open("c++RedditBiosList.txt");
+	file.open("cppRedditBioList.txt");
 	file << Name << " " << age << " " << Username << "\n";
 	file.close();
 	return 0;

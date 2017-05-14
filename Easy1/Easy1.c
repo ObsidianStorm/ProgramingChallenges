@@ -14,7 +14,7 @@ int main()
 	
 	printf("Your name is %s, you are %d years old, and your username is %s", Name, age, Username);
 	FILE *fp;
-	fp = fopen("cRedditBiosList.txt", "w");
+	fp = fopen("cRedditBioList.txt", "w");
 	fputs(Name, fp);
 	fprintf(fp, " %d ", age);
 	fputs(Username, fp);
