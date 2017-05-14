@@ -5,6 +5,7 @@ int main()
   char Username [80];
 	int age;
 	
+	printf("Please enter your name, age, and username.\n");
 	printf("Enter your name:");
 	scanf("%s", Name);
 	printf("Enter your age:");
@@ -12,9 +13,9 @@ int main()
 	printf("Enter your Username:");
 	scanf("%s", Username);
 	
-	printf("Your name is %s, you are %d years old, and your username is %s", Name, age, Username);
+	printf("Your name is %s, you are %d years old, and your username is %s.", Name, age, Username);
 	FILE *fp;
-	fp = fopen("cRedditBioList.txt", "w");
+	fp = fopen("RedditBioList.txt", "w");
 	fputs(Name, fp);
 	fprintf(fp, " %d ", age);
 	fputs(Username, fp);
